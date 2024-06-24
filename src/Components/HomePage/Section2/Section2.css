@@ -1,0 +1,211 @@
+.section2Main{
+    display: grid;
+    grid-template-columns: 25% 35% 40%;
+}
+
+.section2First{
+    background-color: aqua;
+    height: 80vh;
+    overflow: hidden;
+    /* grid-template-columns: 50% 50%; */
+}
+
+.section2Second{
+    height: 80vh;
+}
+
+.section2Third{
+    height: 80vh;
+}
+
+.Firsttop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* overflow: hidden; */
+    background-color: #5f9ea0;
+}
+
+.Firsttop p{
+    width: 80%;
+    text-align: center;
+}
+
+.Thirdtop{
+    background-color: #ced8e2;
+}
+
+.Firstbottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #ced8e2;
+}
+
+.Firstbottom p {
+    width: 80%;
+    text-align: center;
+}
+
+
+.ThirdbottomLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    background-color: #5f9ea0;
+}
+
+.ThirdbottomLeft h3{
+    text-align: center;
+}
+
+.ThirdbottomLeft p{
+    width: 80%;
+    text-align: center;
+}
+
+.ThirdbottomRight{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.ThirdbottomRight h3 {
+    text-align: center;
+}
+
+.ThirdbottomRight p {
+    width: 80%;
+    text-align: center;
+}
+
+.Firsttop, .Thirdtop{
+    height: 50%;
+    /* background-color: #FFB200; */
+    
+}
+
+.Firstbottom, .Thirdbottom{
+    height: 50%;
+    /* background-color: #ced8e2; */
+}
+
+.Thirdbottom{
+    display: flex;
+}
+
+
+
+.ThirdbottomRight{
+    flex: 1;
+    background-color: #000000;
+}
+
+.Thirdtop{
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Thirdtop p,h1{
+    text-align: end;
+    padding: 0px 20px 10px 0px;
+}
+
+
+.section2Second{
+    background-color: blue;
+}
+
+.section2Third{
+    background-color: brown;
+}
+
+.section2Second img{
+    width: 100%;
+    height: 80vh;
+}
+
+.AboutIconBlack{
+    width: 100%;
+    max-width: 200px;
+    height: 7vh;
+    fill: #000;
+}
+.AboutIconWhite{
+    width: 100%;
+    max-width: 200px;
+    height: 7vh;
+    fill: #fff;
+}
+
+
+.section2Second{
+    position: relative;
+}
+
+.btn23{
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px 40px 20px 40px;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease-in;
+}
+
+.btn23:hover{
+    color: #fff;
+    background-color: #FFB200;
+}
+
+
+@media (max-width: 1000px) {
+    .section2Main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-flow: column-reverse;
+    }
+
+    .section2Second img {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .section2First{
+        width: 100%;
+        overflow: hidden;
+        background-color: transparent;
+    } 
+
+    .section2First {
+        order: 3;
+        /* display: flex;
+        flex: 1;
+        width: 100%; */
+    }
+    .section2Second {
+        order: 2;
+    }
+
+     .section2Third {
+         order: 1;
+     }
+}

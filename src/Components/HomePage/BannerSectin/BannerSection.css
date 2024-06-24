@@ -1,0 +1,118 @@
+.BannerMain{
+   display: flex;
+   width: 100%;
+}
+
+.BannerRight{
+    width: 70%;
+}
+
+.BannerLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: #ced8e2;
+    height: 80vh;
+}
+
+.BannerleftMain{
+    display: flex;
+    margin-right:50px;
+    /* justify-content: center; */
+    align-items: center;
+    height: 25vh;
+    gap: 20px;
+    /* background-color:#d9d9d9; */
+    background-color:#fff;
+}
+
+.VerticalBar{
+    width: 10%;
+    height: 100%;
+    /* padding: 60px 0px 60px 0px; */
+    background-color: #ffb200;
+}
+
+.BannerLeftContent h4{
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.BannerLeftContent{
+    width: 90%;
+}
+
+.react-slideshow-container button{
+    border-radius: 0!important;
+    margin: 0!important;
+}
+
+@media (max-width: 1300px) {
+    .BannerLeftContent h4 {
+        text-transform: uppercase;
+        line-height: 16px;
+        font-size: 0.8em;
+    }
+
+    .BannerLeft {
+    width:100%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .BannerRight {
+        position: relative;
+        width: 100%;
+    }
+
+    .BannerLeft {
+        position: absolute;
+        /* top: 0; */
+        bottom: 0;
+            left: 0;
+            /* transform: translate(-0, -50%); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        background-color:transparent;
+        background-size: cover;
+        /* height: 80vh; */
+    }
+
+    .BannerLeftContent h4 {
+        text-transform: uppercase;
+        line-height: 12px;
+        font-size: 0.45em;
+        font-weight: 500;
+    }
+
+    .BannerleftMain {
+        display: flex;
+        margin-right: 50px;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        width: 100%;
+        gap: 20px;
+        /* background-color:#d9d9d9; */
+        background-color: #fff;
+    }
+
+    .BannerLeftContent {
+        width: 100%;
+    }
+
+    .VerticalBar {
+        width: 10%;
+        height: 100%;
+        /* padding: 60px 0px 60px 0px; */
+        background-color: #ffb200;
+    }
+
+    .slideImages {
+        background-size: 100% 100%;
+    }
+}

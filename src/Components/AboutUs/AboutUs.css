@@ -1,0 +1,91 @@
+.AboutUsMain{
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+}
+
+.AboutFirst{
+    margin-top: 5%;
+}
+
+.vision{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.mission{
+    display: grid;
+    grid-template-columns: 50% 60%;
+}
+
+.VisionImage{
+    width: 100%;
+    border-radius: 0px 0px 50px 0px;
+    object-fit: contain;
+}
+
+.MissionImage{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0px 0px 0px 50px;
+}
+
+.Aboutcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background-color: #ced8e2;
+    height: 35vh;
+}
+
+.Aboutcontent h2{
+    color: #f97316;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight:800;
+    font-size: 1.8em;
+    border-bottom: 1px solid black;
+}
+
+.Aboutcontent p{
+    text-align: center;
+}
+
+.AboutUsThirdSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+@media (max-width: 1000px) {
+
+.vision{
+        display: grid;
+        grid-template-columns:  100%;
+    }
+
+.mission {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column layout */
+    grid-template-rows: auto auto;
+    /* Two rows for each element */
+    grid-template-areas:
+        "second"
+        "first";
+}
+
+.mission> :first-child {
+    grid-area: first;
+}
+
+.mission> :nth-child(2) {
+    grid-area: second;
+}
+}
+

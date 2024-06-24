@@ -1,0 +1,13 @@
+.HomeMain{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+@media (max-width: 1000px) {
+    .HomeMain {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+}

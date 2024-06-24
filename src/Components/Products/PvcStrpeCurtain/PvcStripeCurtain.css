@@ -1,0 +1,223 @@
+.pvcImage {
+    position: relative;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 10px;
+    height: 55vh;
+}
+
+.Column1PVC img{
+    cursor: zoom-in;
+    /* background-color:aqua; */
+}
+
+.Column2PVC{
+    overflow-y: scroll;
+    /* background-color:blueviolet; */
+}
+
+.NavigationArrowUp{
+    position: absolute;
+    top: 0;
+    right: 12%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-size: 20px;
+}
+
+.NavigationArrowDown{
+    position: absolute;
+    bottom: -40px;
+    right: 12%;
+    /* transform: translateX(-50%); */
+    z-index: 1;
+    font-size: 20px;
+}
+
+.arrowIcons{
+    fill: #000;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: gold;
+}
+
+.secondColumnMain{
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.pvcImages{
+    width: 100%;
+}
+
+/* Old Code */
+
+.pvcImage .mainImage {
+    width: 70%;
+}
+
+.pvcImage .sideImages {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.pvcImage img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.img12 {
+    cursor: pointer;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.navigation-arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 2em;
+    user-select: none;
+}
+
+.pvcstripecurtainmain {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pvcstripcurtain {
+    width: 80%;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 60%;
+}
+
+.pvcContenthead h2 {
+    color: #031F57;
+    font-size: 1.8em;
+}
+
+.pvcContentpara p {
+    text-align: justify;
+    width: 85%;
+}
+
+.pvcContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pvcContentpara {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+}
+
+.pvcstripecurtainmain {
+    margin-top: 5%;
+}
+
+.btn5 {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.mobileIcon1, .mobileIcon2{
+    display:none;
+}
+
+@media (max-width: 1000px) {
+
+.pvcstripcurtain {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+.pvcImage {
+    /* position: relative;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    gap: 10px;
+    height: 55vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+.Column2PVC{
+    display: flex;
+    overflow-y: scroll;
+    gap: 20px;
+}
+
+.NavigationArrowDown{
+    display: none;
+}
+
+.NavigationArrowUp {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 12%;
+    /* transform: translateX(-50%); */
+    z-index: 1;
+    font-size: 20px;
+}
+
+.iconsForMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobileIcon1,
+.mobileIcon2 {
+    display: block;
+}
+.mobileIcon1{
+    display: flex;
+    justify-content: center;
+}
+
+.arrowIcons {
+    fill: #000;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: gold;
+}
+
+.pvcContentpara p {
+    text-align: justify;
+    width: 100%;
+}
+
+.secondColumnMain{
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+}
