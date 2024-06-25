@@ -72,47 +72,9 @@
 }
 
 
-@media (max-width: 1000px) {
-    .section6Child {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1.5rem;
-        justify-content: center;
-        align-items: center;
-        /* border: 1px solid black; */
-    }
 
-    .ColumnsMain {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        height: 10vh;
-    }
-    
-    .section6Main h2 {
-        text-align: center;
-        font-size: 2em;
-        font-weight: 900;
-        letter-spacing: 5px;
-        color: #031F57;
-    }
 
-    .section6Down {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        align-items: center;
-    }
-
-    .Column2 img {
-        width: 100%;
-        max-width: 500px;
-        object-fit: cover;
-        height: 100%;
-    }
-}
-
-/* @media (max-width: 1400px) {
+@media (max-width: 1200px) {
     .ColumnsMain {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -131,4 +93,4 @@
         justify-content: center;
         align-items: center;
     }
-} */
+}
