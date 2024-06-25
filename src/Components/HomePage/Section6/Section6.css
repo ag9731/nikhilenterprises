@@ -112,7 +112,7 @@
     }
 }
 
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
     .ColumnsMain {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -131,4 +131,4 @@
         justify-content: center;
         align-items: center;
     }
-}
+} */
