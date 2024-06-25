@@ -66,15 +66,15 @@ const AirCurtain = () => {
               commercial and industrial settings for climate control and hygiene
               purposes.
             </p>
-            <p>
+            {/* <p>
               <span style={{ fontWeight: "bold", textTransform: "uppercase" }}>
                 Brand
               </span>
-            </p>
+            </p> */}
             <ul>
-              <li>FlowTech</li>
-              <li>2mm, 3mm, 5mm * 200mm</li>
-              <li>2mm, 3mm, 5mm * 300mm</li>
+              {/* <li>FlowTech</li> */}
+              <li>2,3,4,5,6 Feet.</li>
+              <li>1meter, 2meter.</li>
             </ul>
             <p>
               <span style={{ fontWeight: "bold", textTransform: "uppercase" }}>
@@ -92,7 +92,7 @@ const AirCurtain = () => {
               <li>Singel Phase, Turbo, Three Phase, Flame Proof</li>
             </ul>
             <Link to="/contact">
-            <button className="btn5">BOOK NOW</button>
+              <button className="btn5">BOOK NOW</button>
             </Link>
           </div>
         </div>

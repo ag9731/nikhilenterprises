@@ -56,6 +56,14 @@ const slideImages = [
     url: "./images/nikhilenterprisesbanglore5.webp",
     caption: "Slide 3",
   },
+  {
+    url: "./images/aircurtain.webp",
+    caption: "Slide 3",
+  },
+  {
+    url: "./images/pvcaircurtain.webp",
+    caption: "Slide 3",
+  },
 ];
 
 const BannerSection = () => {

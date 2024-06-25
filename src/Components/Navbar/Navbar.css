@@ -5,6 +5,11 @@
     align-items: center;
 }
 
+.mobilenumber{
+    text-decoration: none;
+    color: white;
+}
+
 .NavTopLeftContent,
 .NavTopRightContent {
     flex: 1;

@@ -7,10 +7,34 @@
     padding: 20px;
 }
 
-.contact-form {
+.contact-info {
     width: 100%;
     max-width: 500px;
     background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    margin-right: 10px;
+}
+
+.contact-detail span {
+    font-size: 16px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+    background-color:#ffb200;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -26,7 +50,7 @@
 .form-input,
 .form-textarea {
     width: 100%;
-    padding: 10px;
+    padding: 10px 0px 10px 0px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;

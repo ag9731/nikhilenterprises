@@ -42,11 +42,28 @@ const Navbar = () => {
           <div className="NavTopRightContent">
             <div>
               <FaPhoneAlt className="NavIcons" />
-              <p>74114 44961</p>
+              <p>
+                <a className="mobilenumber" href="tel:9663131304">
+                  9663131304
+                </a>
+              </p>
+            </div>
+            <div>
+              <FaPhoneAlt className="NavIcons" />
+              <p>
+                <a className="mobilenumber" href="tel:7411444961">
+                  9663131304
+                </a>
+              </p>
             </div>
             <div>
               <FaEnvelopeOpen className="NavIcons" />
-              <p>nikhil.enterprises.234@gmail.com</p>
+              <p>
+                {" "}
+                <a className="mobilenumber" href="mailto:nikhil.enterprises.234@gmail.com">
+                  nikhil.enterprises.234@gmail.com
+                </a>
+              </p>
             </div>
           </div>
         </div>

@@ -6,10 +6,7 @@
     height: 55vh;
 }
 
-.Column1PVC img{
-    /* cursor: zoom-in; */
-    /* background-color:aqua; */
-}
+
 
 .Column2PVC{
     overflow-y: scroll;
