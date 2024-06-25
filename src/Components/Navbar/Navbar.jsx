@@ -52,7 +52,7 @@ const Navbar = () => {
               <FaPhoneAlt className="NavIcons" />
               <p>
                 <a className="mobilenumber" href="tel:7411444961">
-                  9663131304
+                  7411444961
                 </a>
               </p>
             </div>
@@ -60,7 +60,10 @@ const Navbar = () => {
               <FaEnvelopeOpen className="NavIcons" />
               <p>
                 {" "}
-                <a className="mobilenumber" href="mailto:nikhil.enterprises.234@gmail.com">
+                <a
+                  className="mobilenumber"
+                  href="mailto:nikhil.enterprises.234@gmail.com"
+                >
                   nikhil.enterprises.234@gmail.com
                 </a>
               </p>
