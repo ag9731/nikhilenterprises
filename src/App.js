@@ -18,6 +18,7 @@ import RollerBlinds from "./Components/Products/RollerBlinds/RollerBlinds";
 import SoftWallCurtain from "./Components/Products/SoftWallCurtain/SoftWallCurtain";
 import VertikaclBlinds from "./Components/Products/VertikaclBlinds/VertikaclBlinds";
 import Contact from "./Components/Contact/Contact";
+import Testimonials from "./Components/Testimonial/Testimonials";
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/contact" element={<Contact />} />
           <Route
             path="products/pvc-strip-curtains"
             element={<PvcStripeCurtain />}
@@ -51,6 +52,7 @@ function App() {
             path="products/vertikacl-blinds"
             element={<VertikaclBlinds />}
           />
+          <Route path="/testimonial" element={<Testimonials/>} />
           {/* <Homepage /> */}
         </Routes>
         <Footer />
