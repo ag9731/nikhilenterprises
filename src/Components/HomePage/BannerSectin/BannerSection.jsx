@@ -98,9 +98,7 @@ const BannerSection = () => {
           <div className="VerticalBar"></div>
           <div className="BannerLeftContent">
             <h4>
-              Lorem ipsum is placeholder text commonly used in the graphic,
-              print, and publishing industries for previewing layouts and visual
-              mockups. Lorem Ipsum Generator
+              TOP CLASS, WORLD-CLASS PRODUCTS TO SUIT YOUR NEEDS AND BUDGET
             </h4>
           </div>
         </div>

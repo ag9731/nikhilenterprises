@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Section6 from "../../HomePage/Section6/Section6";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const AirCurtain = () => {
   const [selectedImage, setSelectedImage] = useState(
@@ -90,7 +91,9 @@ const AirCurtain = () => {
               <li>Flame Proof Body</li>
               <li>Singel Phase, Turbo, Three Phase, Flame Proof</li>
             </ul>
+            <Link to="/contact">
             <button className="btn5">BOOK NOW</button>
+            </Link>
           </div>
         </div>
         <div className="pvcImage">

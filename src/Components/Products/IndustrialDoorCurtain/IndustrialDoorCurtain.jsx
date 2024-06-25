@@ -3,6 +3,7 @@ import React, { useState } from "react";
 // import "./PvcStripeCurtain.css";
 import Section6 from "../../HomePage/Section6/Section6";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const IndustrialDoorCurtain = () => {
   const [selectedImage, setSelectedImage] = useState(
@@ -61,7 +62,10 @@ const IndustrialDoorCurtain = () => {
               factories, warehouses, and manufacturing plants. They enhance
               operational efficiency by allowing quick and unobstructed passage.
             </p>
+            <Link to="/contact">
             <button className="btn5">BOOK NOW</button>
+            
+            </Link>
           </div>
         </div>
         <div className="pvcImage">

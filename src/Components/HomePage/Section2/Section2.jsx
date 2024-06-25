@@ -7,8 +7,10 @@ import {
   FaHandHoldingWater,
   FaHandRock,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Section2 = () => {
+  
   return (
     <div className="section2Main">
       {/* Row 1 */}
@@ -55,7 +57,9 @@ const Section2 = () => {
 
       <div className="section2Second">
         <img src="./images/NikhilEnterprisers.webp" alt="" />
-        <button className="btn23">CONTACT US</button>
+        <Link to="/contact">
+           <button className="btn23">CONTACT US</button>
+        </Link>
       </div>
 
       {/* Row 3 */}
