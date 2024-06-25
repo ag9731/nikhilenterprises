@@ -32,6 +32,11 @@ const Footer = () => {
               Contact us
             </Link>
           </li>
+          <li>
+            <Link to="/" onClick={handleExploreClick}>
+              Products
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="FooterColumn3">

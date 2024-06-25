@@ -116,7 +116,11 @@ const Section6 = () => {
               </React.Fragment>
             ))}
           </div>
-          <button className="btn6">EXPLORE MORE</button>
+          <Link to="/">
+            <button className="btn6" onClick={handleExploreClick}>
+              EXPLORE MORE
+            </button>
+          </Link>
         </div>
       </div>
     </>
