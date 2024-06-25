@@ -1,8 +1,13 @@
 import React from "react";
 import "./Footer.css";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+
+  const handleExploreClick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
+  };
   return (
     <div className="FooterMain">
       <div className="FooterColumn1">
@@ -16,10 +21,17 @@ const Footer = () => {
       <div className="FooterColumn2">
         <h4>Quick Links</h4>
         <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Link to="/" onClick={handleExploreClick}>Home</Link>
+          </li>
+          <li>
+            <Link to="/about-us" onClick={handleExploreClick}>About Us</Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={handleExploreClick}>
+              Contact us
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="FooterColumn3">
