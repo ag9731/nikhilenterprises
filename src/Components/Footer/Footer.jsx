@@ -17,24 +17,32 @@ const Footer = () => {
           <FaInstagram />
           <FaLinkedin />
         </div>
+        <div style={{marginTop:20}}>
+          Powered By{" "}
+          <a href="https://www.innomatricstech.com/">INNOMATRICS TECH</a>
+        </div>
       </div>
       <div className="FooterColumn2">
         <h4>Quick Links</h4>
         <ul>
           <li>
-            <Link to="/" onClick={handleExploreClick}>Home</Link>
-          </li>
-          <li>
-            <Link to="/about-us" onClick={handleExploreClick}>About Us</Link>
-          </li>
-          <li>
-            <Link to="/contact" onClick={handleExploreClick}>
-              Contact us
+            <Link to="/" onClick={handleExploreClick}>
+              Home
             </Link>
           </li>
           <li>
             <Link to="/" onClick={handleExploreClick}>
               Products
+            </Link>
+          </li>
+          <li>
+            <Link to="/about-us" onClick={handleExploreClick}>
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={handleExploreClick}>
+              Contact us
             </Link>
           </li>
         </ul>
