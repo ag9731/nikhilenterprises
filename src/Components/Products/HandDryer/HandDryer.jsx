@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
 // import "./PvcStripeCurtain.css";
 import Section6 from "../../HomePage/Section6/Section6";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
-
 const HandDryer = () => {
-
-
   const [selectedImage, setSelectedImage] = useState(
     "/AirCurtain/aircurtain1.webpp"
   );
@@ -78,8 +75,8 @@ const HandDryer = () => {
               <li>FlowTech</li>
               <li>2mm, 3mm, 5mm * 200mm</li>
               <li>2mm, 3mm, 5mm * 300mm</li>
-            </ul>
-            <p>
+            </ul> */}
+            {/* <p>
               <span style={{ fontWeight: "bold", textTransform: "uppercase" }}>
                 Material
               </span>
@@ -99,7 +96,7 @@ const HandDryer = () => {
         </div>
         <div className="pvcImage">
           <div className="Column1PVC">
-            <ReactImageMagnify
+            {/* <ReactImageMagnify
               {...{
                 smallImage: {
                   alt: "Selected",
@@ -116,6 +113,11 @@ const HandDryer = () => {
                 isHintEnabled: true,
                 shouldHideHintAfterFirstActivation: false,
               }}
+            /> */}
+            <img
+              src={selectedImage}
+              alt="Selected"
+              style={{ maxWidth: "100%" }}
             />
           </div>
           <div className="Column2PVC">
@@ -128,7 +130,12 @@ const HandDryer = () => {
                 onClick={() => setSelectedImage(pvcImages.url)}
                 className="images34"
               >
-                <img src={pvcImages.url} alt={pvcImages.title} />
+                {/* <img src={pvcImages.url} alt={pvcImages.title} /> */}
+                <img
+                  src={pvcImages.url}
+                  alt={pvcImages.title}
+                  style={{ width: "100%", cursor: "pointer" }}
+                />
               </div>
             ))}
             <div className="NavigationArrowDown" onClick={handleNextClick}>

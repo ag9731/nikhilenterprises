@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify"; // Commented out since not needed
 // import "./PvcStripeCurtain.css";
 import Section6 from "../../HomePage/Section6/Section6";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
-
-
 
 const AutomaticDoor = () => {
   const [selectedImage, setSelectedImage] = useState(
@@ -54,8 +52,8 @@ const AutomaticDoor = () => {
           </div>
           <div className="pvcContentpara">
             <p>
-              Automatic Sensor doors are sensor-operated entry systems that open and
-              close without manual effort, providing convenience and
+              Automatic Sensor doors are sensor-operated entry systems that open
+              and close without manual effort, providing convenience and
               accessibility. They are commonly used in commercial buildings,
               hospitals, and retail stores to ensure smooth and efficient
               traffic flow. These doors enhance security and energy efficiency
@@ -72,9 +70,9 @@ const AutomaticDoor = () => {
               <li>FlowTech</li>
               <li>2mm, 3mm, 5mm * 200mm</li>
               <li>2mm, 3mm, 5mm * 300mm</li>
-            </ul>
-            <p> 
-               <span style={{ fontWeight: "bold", textTransform: "uppercase" }}>
+            </ul> */}
+            {/* <p>
+              <span style={{ fontWeight: "bold", textTransform: "uppercase" }}>
                 Material
               </span>
             </p>
@@ -93,23 +91,26 @@ const AutomaticDoor = () => {
         </div>
         <div className="pvcImage">
           <div className="Column1PVC">
-            <ReactImageMagnify
-              {...{
-                smallImage: {
-                  alt: "Selected",
-                  isFluidWidth: true,
-                  src: selectedImage,
-                },
-                largeImage: {
-                  src: selectedImage,
-                  width: 1200,
-                  height: 1800,
-                },
-                lensStyle: { backgroundColor: "rgba(0,0,0,.6)" },
-                enlargedImagePosition: "over",
-                isHintEnabled: true,
-                shouldHideHintAfterFirstActivation: false,
+            {/* <ReactImageMagnify
+              smallImage={{
+                alt: "Selected",
+                isFluidWidth: true,
+                src: selectedImage,
               }}
+              largeImage={{
+                src: selectedImage,
+                width: 1200,
+                height: 1800,
+              }}
+              lensStyle={{ backgroundColor: "rgba(0,0,0,.6)" }}
+              enlargedImagePosition="over"
+              isHintEnabled={true}
+              shouldHideHintAfterFirstActivation={false}
+            /> */}
+            <img
+              src={selectedImage}
+              alt="Selected"
+              style={{ maxWidth: "100%", maxHeight: "100%" }}
             />
           </div>
           <div className="Column2PVC">
@@ -122,7 +123,11 @@ const AutomaticDoor = () => {
                 onClick={() => setSelectedImage(pvcImages.url)}
                 className="images34"
               >
-                <img src={pvcImages.url} alt={pvcImages.title} />
+                <img
+                  src={pvcImages.url}
+                  alt={pvcImages.title}
+                  style={{ width: "100%", cursor: "pointer" }}
+                />
               </div>
             ))}
             <div className="NavigationArrowDown" onClick={handleNextClick}>

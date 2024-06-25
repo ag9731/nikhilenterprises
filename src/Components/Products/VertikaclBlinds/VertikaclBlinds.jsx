@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
 // import "./PvcStripeCurtain.css";
 import Section6 from "../../HomePage/Section6/Section6";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
 const VertikaclBlinds = () => {
-
   const [selectedImage, setSelectedImage] = useState(
     "/VerticalBlinds/vertical_blinds_1.png"
   );
@@ -37,7 +36,7 @@ const VertikaclBlinds = () => {
       setStartIndex(startIndex + 1);
     }
   };
-  
+
   return (
     <div className="pvcstripecurtainmain">
       <div className="pvcstripcurtain">
@@ -86,7 +85,7 @@ const VertikaclBlinds = () => {
         </div>
         <div className="pvcImage">
           <div className="Column1PVC">
-            <ReactImageMagnify
+            {/* <ReactImageMagnify
               {...{
                 smallImage: {
                   alt: "Selected",
@@ -103,6 +102,11 @@ const VertikaclBlinds = () => {
                 isHintEnabled: true,
                 shouldHideHintAfterFirstActivation: false,
               }}
+            /> */}
+            <img
+              src={selectedImage}
+              alt="Selected"
+              style={{ maxWidth: "100%" }}
             />
           </div>
           <div className="Column2PVC">

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import ReactImageMagnify from "react-image-magnify";
-// import "./PvcStripeCurtain.css";
 import Section6 from "../../HomePage/Section6/Section6";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
@@ -44,7 +42,7 @@ const AirCurtain = () => {
   };
 
   const handleNextClick = () => {
-    if (startIndex < array.length - 1) {
+    if (startIndex < array.length - 3) {
       setStartIndex(startIndex + 1);
     }
   };
@@ -83,7 +81,10 @@ const AirCurtain = () => {
               </span>
             </p>
             <ul>
-              <li>Industrial Air Curtain(CRCA) Powder Coated with SS Blower and ABS Blower</li>
+              <li>
+                Industrial Air Curtain(CRCA) Powder Coated with SS Blower and
+                ABS Blower
+              </li>
               <li>SS - Stainless Stell Full Body</li>
               <li>Slim Body Commercial Air Curtain</li>
               <li>Flame Proof Body</li>
@@ -94,24 +95,7 @@ const AirCurtain = () => {
         </div>
         <div className="pvcImage">
           <div className="Column1PVC">
-            <ReactImageMagnify
-              {...{
-                smallImage: {
-                  alt: "Selected",
-                  isFluidWidth: true,
-                  src: selectedImage,
-                },
-                largeImage: {
-                  src: selectedImage,
-                  width: 1200,
-                  height: 1800,
-                },
-                lensStyle: { backgroundColor: "rgba(0,0,0,.6)" },
-                enlargedImagePosition: "over",
-                isHintEnabled: true,
-                shouldHideHintAfterFirstActivation: false,
-              }}
-            />
+            <img src={selectedImage} alt="Selected" />
           </div>
           <div className="Column2PVC">
             <div className="NavigationArrowUp" onClick={handlePrevClick}>

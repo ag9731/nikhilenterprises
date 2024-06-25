@@ -7,7 +7,7 @@
 }
 
 .Column1PVC img{
-    cursor: zoom-in;
+    /* cursor: zoom-in; */
     /* background-color:aqua; */
 }
 
@@ -147,6 +147,12 @@
     display:none;
 }
 
+
+/* Zoom Image */
+
+
+
+
 @media (max-width: 1000px) {
 
 .pvcstripcurtain {
@@ -166,7 +172,7 @@
 
 .Column2PVC{
     display: flex;
-    overflow-y: scroll;
+    overflow: scroll;
     gap: 20px;
 }
 

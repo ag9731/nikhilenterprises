@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import ReactImageMagnify from "react-image-magnify";
 import "./PvcStripeCurtain.css";
 import Section6 from "../../HomePage/Section6/Section6";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
@@ -9,26 +8,6 @@ const PvcStripeCurtain = () => {
     "/PvcStripCurtains/pvc01.webp"
   );
   const [startIndex, setStartIndex] = useState(0);
-
-
-  const array1 = [
-    {
-      url: "/WeldingGrade/weldinggrade1.jpg",
-      title: "Welding Grade PVC Stripe Curtain",
-    },
-    {
-      url: "/WeldingGrade/weldinggrade2.jpg",
-      title: "Welding Green PVC Stripe Curtain",
-    },
-    {
-      url: "/WeldingGrade/weldinggrade3.jpg",
-      title: "Welding Grade PVC Stripe Curtain",
-    },
-    {
-      url: "/WeldingGrade/weldinggrade4.jpg",
-      title: "Welding Red PVC Stripe Curtain",
-    },
-  ];
 
   const array = [
     {
@@ -130,23 +109,10 @@ const PvcStripeCurtain = () => {
           </div>
           <div className="pvcImage">
             <div className="Column1PVC">
-              <ReactImageMagnify
-                {...{
-                  smallImage: {
-                    alt: "Selected",
-                    isFluidWidth: true,
-                    src: selectedImage,
-                  },
-                  largeImage: {
-                    src: selectedImage,
-                    width: 1200,
-                    height: 1800,
-                  },
-                  lensStyle: { backgroundColor: "rgba(0,0,0,.6)" },
-                  enlargedImagePosition: "over",
-                  isHintEnabled: true,
-                  shouldHideHintAfterFirstActivation: false,
-                }}
+              <img
+                src={selectedImage}
+                alt="Selected"
+                className="selectedImage"
               />
             </div>
             <div className="Column2PVC">
@@ -154,7 +120,7 @@ const PvcStripeCurtain = () => {
                 <FaAngleUp className="arrowIcons" />
               </div>
               {array
-                .slice(startIndex, startIndex + 3)
+                .slice(startIndex, startIndex + 8)
                 .map((pvcImages, index) => (
                   <div
                     key={index}
@@ -176,10 +142,13 @@ const PvcStripeCurtain = () => {
       {/* downSection */}
 
       <div className="secondColumnMain">
-        {array1.map((pvcimages,index)=>(
-          <div key={index} >
-            <img className="pvcImages" src={pvcimages.url} alt="" />
-            
+        {array.map((pvcimages, index) => (
+          <div key={index}>
+            <img
+              className="pvcImages"
+              src={pvcimages.url}
+              alt={pvcimages.title}
+            />
             <h3>{pvcimages.title}</h3>
           </div>
         ))}

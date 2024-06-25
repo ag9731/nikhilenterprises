@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
 // import "./PvcStripeCurtain.css";
 import Section6 from "../../HomePage/Section6/Section6";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
 const SoftWallCurtain = () => {
-
   const [selectedImage, setSelectedImage] = useState(
     "/SoftWallCurtain/softwall_curtain_1.webp"
   );
   const [startIndex, setStartIndex] = useState(0);
-
 
   const array = [
     {
@@ -39,17 +37,17 @@ const SoftWallCurtain = () => {
     },
   ];
 
-    const handlePrevClick = () => {
-      if (startIndex > 0) {
-        setStartIndex(startIndex - 1);
-      }
-    };
+  const handlePrevClick = () => {
+    if (startIndex > 0) {
+      setStartIndex(startIndex - 1);
+    }
+  };
 
-    const handleNextClick = () => {
-      if (startIndex < array.length - 1) {
-        setStartIndex(startIndex + 1);
-      }
-    };
+  const handleNextClick = () => {
+    if (startIndex < array.length - 1) {
+      setStartIndex(startIndex + 1);
+    }
+  };
 
   return (
     <div className="pvcstripecurtainmain">
@@ -70,16 +68,6 @@ const SoftWallCurtain = () => {
               organization. Ideal for enhancing operational efficiency and
               maintaining a professional appearance.
             </p>
-            {/* <p>
-              <span style={{ fontWeight: "bold", textTransform: "uppercase" }}>
-                Brand
-              </span>
-            </p> */}
-            {/* <ul>
-              <li>FlowTech</li>
-              <li>2mm, 3mm, 5mm * 200mm</li>
-              <li>2mm, 3mm, 5mm * 300mm</li>
-            </ul> */}
             <p>
               <span style={{ fontWeight: "bold", textTransform: "uppercase" }}>
                 Specifications
@@ -96,30 +84,13 @@ const SoftWallCurtain = () => {
         </div>
         <div className="pvcImage">
           <div className="Column1PVC">
-            <ReactImageMagnify
-              {...{
-                smallImage: {
-                  alt: "Selected",
-                  isFluidWidth: true,
-                  src: selectedImage,
-                },
-                largeImage: {
-                  src: selectedImage,
-                  width: 1200,
-                  height: 1800,
-                },
-                lensStyle: { backgroundColor: "rgba(0,0,0,.6)" },
-                enlargedImagePosition: "over",
-                isHintEnabled: true,
-                shouldHideHintAfterFirstActivation: false,
-              }}
-            />
+            <img src={selectedImage} alt="Selected" />
           </div>
           <div className="Column2PVC">
             <div className="NavigationArrowUp" onClick={handlePrevClick}>
               <FaAngleUp className="arrowIcons" />
             </div>
-            {array.slice(startIndex, startIndex + 3).map((pvcImages, index) => (
+            {array.slice(startIndex, startIndex + 6).map((pvcImages, index) => (
               <div
                 key={index}
                 onClick={() => setSelectedImage(pvcImages.url)}

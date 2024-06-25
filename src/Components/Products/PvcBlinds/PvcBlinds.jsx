@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
 // import "./PvcStripeCurtain.css";
 import Section6 from "../../HomePage/Section6/Section6";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
 const PvcBlinds = () => {
-
   const [selectedImage, setSelectedImage] = useState(
     "/PVCBlinds/pvcblinds_1.webp"
   );
@@ -92,24 +91,7 @@ const PvcBlinds = () => {
         </div>
         <div className="pvcImage">
           <div className="Column1PVC">
-            <ReactImageMagnify
-              {...{
-                smallImage: {
-                  alt: "Selected",
-                  isFluidWidth: true,
-                  src: selectedImage,
-                },
-                largeImage: {
-                  src: selectedImage,
-                  width: 1200,
-                  height: 1800,
-                },
-                lensStyle: { backgroundColor: "rgba(0,0,0,.6)" },
-                enlargedImagePosition: "over",
-                isHintEnabled: true,
-                shouldHideHintAfterFirstActivation: false,
-              }}
-            />
+            <img src={selectedImage} alt="Selected" />
           </div>
           <div className="Column2PVC">
             <div className="NavigationArrowUp" onClick={handlePrevClick}>

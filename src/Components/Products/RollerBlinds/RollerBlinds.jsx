@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import ReactImageMagnify from "react-image-magnify";
+// import ReactImageMagnify from "react-image-magnify";
 // import "./PvcStripeCurtain.css";
 import Section6 from "../../HomePage/Section6/Section6";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
 const RollerBlinds = () => {
-
   const [selectedImage, setSelectedImage] = useState(
-    "/AirCurtain/aircurtain1.webpp"
+    "/AirCurtain/aircurtain1.webp"
   );
   const [startIndex, setStartIndex] = useState(0);
 
@@ -16,25 +15,25 @@ const RollerBlinds = () => {
       id: 1,
       title: "Pvc stripe curtain",
       desc: "Transparent PVC strips for easy passage while maintaining environmental control.",
-      // url: "/AirCurtain/aircurtain1.webp",
+      url: "/AirCurtain/aircurtain.webp",
     },
     {
       id: 2,
       title: "Air curtain",
       desc: "Creates a barrier of air to separate indoor and outdoor environments, maintaining temperature and reducing energy loss.",
-      // url: "/AirCurtain/aircurtain2.webp",
+      url: "/AirCurtain/aircurtain.webp",
     },
     {
       id: 3,
       title: "Fly catcher",
       desc: "Device designed to attract and capture flying insects, maintaining hygiene in indoor spaces.",
-      // url: "/AirCurtain/aircurtain3.webp",
+      url: "/AirCurtain/aircurtain.webp",
     },
     {
       id: 4,
       title: "Monsoon blinds",
       desc: "Weather-resistant blinds designed to protect against heavy rain and wind.",
-      // url: "/AirCurtain/aircurtain4.webp",
+      url: "/AirCurtain/aircurtain.webp",
     },
   ];
 
@@ -97,24 +96,7 @@ const RollerBlinds = () => {
         </div>
         <div className="pvcImage">
           <div className="Column1PVC">
-            <ReactImageMagnify
-              {...{
-                smallImage: {
-                  alt: "Selected",
-                  isFluidWidth: true,
-                  src: selectedImage,
-                },
-                largeImage: {
-                  src: selectedImage,
-                  width: 1200,
-                  height: 1800,
-                },
-                lensStyle: { backgroundColor: "rgba(0,0,0,.6)" },
-                enlargedImagePosition: "over",
-                isHintEnabled: true,
-                shouldHideHintAfterFirstActivation: false,
-              }}
-            />
+            <img src={selectedImage} alt="Selected" />
           </div>
           <div className="Column2PVC">
             <div className="NavigationArrowUp" onClick={handlePrevClick}>
@@ -138,6 +120,6 @@ const RollerBlinds = () => {
       <Section6 />
     </div>
   );
-}
+};
 
-export default RollerBlinds
+export default RollerBlinds;
